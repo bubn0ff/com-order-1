@@ -794,7 +794,7 @@ img {
   background-color: $button-color-background;
   padding: 10px 15px;
   border-radius: 6px;
-  border: 1px solid $button-color-background;
+  border: 1px solid;
   cursor: pointer;
 
   // .btn-main:hover
