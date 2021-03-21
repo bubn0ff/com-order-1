@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Олег Бубнов">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Тариф и оплата</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrap container">
+      <div class="header__support">
+        <a href="#" class="header__support_link link">Написать в техподдержку</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__wrap container">
+      <aside class="aside-menu">
+        <ul class="aside-menu__list">
+          <li class="aside-menu__item">
+            <a href="#" class="aside-menu__link link">Сервисы</a>
+          </li>
+          <li class="aside-menu__item">
+            <a href="#" class="aside-menu__link link">Тариф и оплата</a>
+          </li>
+          <li class="aside-menu__item">
+            <a href="#" class="aside-menu__link link">Статистика</a>
+          </li>
+        </ul>
+      </aside>
+
+      <article class="article">
+        <div class="article__title">
+          <h2 class="article__title_text">Тариф и оплата</h2>
+        </div>
+        <div class="article__breadcrumbs breadcrumbs">
+          <span class="breadcrumbs__item">Тариф и оплата</span>
+        </div>
+
+        <section class="section section__balance">
+          <div class="balance">
+            <div class="balance__top">
+              <div class="balance__body">
+                <div class="balance__button">
+                  <button class="balance__button_item btn-main">Пополнить баланс</button>
+                </div>
+                <div class="balance__sum sum-balance">
+                  <div class="sum-balance__total">
+                    <p class="sum-balance__text">Баланс: 
+                      <span class="sum-balance__sum">0.00</span>
+                      <span class="sum-balance__currency">₽</span>
+                    </p>
+                  </div>
+                  <div class="sum-balance__ref ref-balance">
+                    <p class="ref-balance__text">Реферальный баланс: 
+                      <span class="ref-balance__sum">0.00</span>
+                      <span class="ref-balance__currency">₽</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="balance__info">
+                <h2 class="balance__info_txt info">Текущих средств на оплату тарифа хватит на 4 дня</h2>
+              </div>
+            </div>
+            <div class="balance__bottom payments">
+              <div class="payments__title block-title">
+                <p class="payments__title_txt">Автоматические платежи</p>
+              </div>
+              <div class="payments__subtitle block-subtitle">
+                <p class="payments__subtitle_txt">Подключите автоматическое пополнение, чтобы не допустить отрицательного баланса на счете</p>
+              </div>
+              <div class="payments__button">
+                <button class="payments__button_item btn-info">Подключить</button>
+              </div>
+              <div class="payments__info">
+                <p class="payments__info_txt">Пока автоматические платежи не подключены мы будем уведомлять вас по электронной почте за несколько дней до истечения средств</p>
+              </div>
+            </div>
+          </div>
+          <div class="bonus">
+            <div class="bonus__top">
+              <div class="bonus__title">
+                <p class="bonus__title_txt">Оплатите на несколько месяцев и получите бонус </p>
+              </div>
+              <div class="bonus__body subtitle-bonus">
+                <ul class="subtitle-bonus__list">
+                  <li class="subtitle-bonus__item">Оплата на 15 000₽ - бонус 5%</li>
+                  <li class="subtitle-bonus__item">Оплата на 30 000₽ - бонус 10%</li>
+                  <li class="subtitle-bonus__item">Оплата на 60 000₽ - бонус 15%</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bonus__bottom promo">
+              <div class="promo__title block-title">
+                <p class="promo__title_txt">Есть бонусный промо-код ?</p>
+              </div>
+              <div class="promo__subtitle block-subtitle">
+                <p class="promo__subtitle_txt">Активируйте его и получите бонус на ваш счет</p>
+              </div>
+              <form action="#" method="POST" class="promo__form">
+                <input type="text" class="promo__form_input input-bonus" placeholder="Код купона">
+                <button class="promo__form_btn btn-info">Активировать</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <div class="article__subtitle">
+          <h2 class="article__subtitle_text">Детализация расходов</h2>
+        </div>
+        <section class="section section__mini">
+          <div class="expenses">
+            <div class="expenses__tarif">
+              <span class="expenses__tarif_label">Тариф: </span>
+              <span class="expenses__tarif_name">Тестовый</span>
+            </div>
+            <div class="expenses__money">
+              <span class="expenses__money_number">0.00</span>
+              <span class="expenses__money_label"> ₽/в день</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="article__subtitle">
+          <p class="article__subtitle_text">История</p>
+        </div>
+        <section class="section section__mini">
+          <div class="history">
+            <div class="history__label">
+              <p class="history__label_date">Дата</p>
+              <p class="history__label_write-off">Списание</p>
+              <p class="history__label_replenishment">Пополнение</p>
+            </div>
+            <div class="history__body">
+              <ul class="history__list list-history">
+                <li class="list-history__item">
+                  <p class="list-history__item_date">22.02.2021</p>
+                  <p class="list-history__item_write-off">5 650<span> ₽</span></p>
+                  <p class="list-history__item_replenishment">14 500<span> ₽</span></p>
+                </li>
+                <li class="list-history__item">
+                  <p class="list-history__item_date">22.01.2021</p>
+                  <p class="list-history__item_write-off">5 650<span> ₽</span></p>
+                  <p class="list-history__item_replenishment">14 500<span> ₽</span></p>
+                </li>
+                <li class="list-history__item">
+                  <p class="list-history__item_date">22.02.2021</p>
+                  <p class="list-history__item_write-off">5 650<span> ₽</span></p>
+                  <p class="list-history__item_replenishment">14 500<span> ₽</span></p>
+                </li>
+                <li class="list-history__item">
+                  <p class="list-history__item_date">22.01.2021</p>
+                  <p class="list-history__item_write-off">5 650<span> ₽</span></p>
+                  <p class="list-history__item_replenishment">14 500<span> ₽</span></p>
+                </li>
+                <li class="list-history__item">
+                  <p class="list-history__item_date">22.02.2021</p>
+                  <p class="list-history__item_write-off">5 650<span> ₽</span></p>
+                  <p class="list-history__item_replenishment">14 500<span> ₽</span></p>
+                </li>
+                <li class="list-history__item">
+                  <p class="list-history__item_date">22.01.2021</p>
+                  <p class="list-history__item_write-off">5 650<span> ₽</span></p>
+                  <p class="list-history__item_replenishment">14 500<span> ₽</span></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="modal">
+          <div class="modal__container">
+            <form action="#" class="modal__form">
+              <div class="modal__top">
+                <p class="modal__title">Оплата</p>
+                <span class="modal__cross"></span>
+              </div>
+              <div class="modal__body">
+                <div class="modal__sum">
+                  <input type="number" class="modal__sum_input input-bonus" placeholder="Сумма пополнения">
+                </div>
+                <div class="bonus__top modal__info">
+                  <div class="bonus__title">
+                    <p class="bonus__title_txt">Оплатите на несколько месяцев и получите бонус </p>
+                  </div>
+                  <div class="bonus__body">
+                    <ul class="subtitle-bonus__list">
+                      <li class="subtitle-bonus__item">Оплата на 15 000₽ - бонус 5%</li>
+                      <li class="subtitle-bonus__item">Оплата на 30 000₽ - бонус 10%</li>
+                      <li class="subtitle-bonus__item">Оплата на 60 000₽ - бонус 15%</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__payment payment-modal">
+                <p class="payment-modal__title">Выберите платёжную систему</p>
+                <ul class="payment-modal__list">
+                  <li class="payment-modal__item">
+                    <input id="yandex" type="radio" class="payment-modal__yandex input-modal" name="payment" value="Яндекс деньги" checked>
+                    <label for="yandex">Яндекс деньги</label>
+                  </li>
+                  <li class="payment-modal__item">
+                    <input id="qiwi" type="radio" class="payment-modal__qiwi input-modal" name="payment" value="Qiwi wallet">
+                    <label for="qiwi">Qiwi wallet</label>
+                  </li>
+                  <li class="payment-modal__item">
+                    <input id="webmoney" type="radio" class="payment-modal__webmoney input-modal" name="payment" value="WebMoney">
+                    <label for="webmoney">WebMoney</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal__button">
+                <button type="submit" class="modal__button_item btn-main">Перейти к оплате</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
