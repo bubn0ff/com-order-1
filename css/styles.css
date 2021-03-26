@@ -631,7 +631,7 @@ img {
   line-height: 17px;
 }
 
-@media (max-width: 342px) {
+@media (max-width: 384px) {
   .expenses {
     font-size: 12px;
   }
@@ -695,9 +695,16 @@ img {
   position: relative;
 }
 
-@media (max-width: 362px) {
+@media (max-width: 384px) {
   .list-history__item {
     font-size: 12px;
+  }
+}
+
+@media all and (max-width: 384px) and (-ms-high-contrast: none), (max-width: 384px) and (-ms-high-contrast: active) {
+  .list-history__item {
+    /* IE10+ */
+    font-size: 10px;
   }
 }
 
