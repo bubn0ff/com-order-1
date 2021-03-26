@@ -1022,10 +1022,14 @@ img {
 
   // .modal__cross
   &__cross {
+    cursor: pointer;
+    pointer-events: none;
+
     // .modal__cross::after
     &::after {
       content: url('../img/ico_cross.svg');
       cursor: pointer;
+      pointer-events: auto;
     }
   }
 

@@ -1,4 +1,4 @@
-@import url('./normalize.css');
+@import url(c:\Projects\com-order-1\css\normalize.css);
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -762,9 +762,15 @@ img {
   margin-bottom: 18px;
 }
 
+.modal__cross {
+  cursor: pointer;
+  pointer-events: none;
+}
+
 .modal__cross::after {
   content: url("../img/ico_cross.svg");
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .modal__body {
