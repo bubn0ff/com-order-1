@@ -990,7 +990,7 @@ img {
 
   // .modal__container
   &__container {
-    max-width: 614px;
+    width: 614px;
     position: fixed;
     top: 50%; 
     left: 50%;
@@ -1000,6 +1000,14 @@ img {
     padding: 21px 28px;
     transform: translate(-50%, -50%);
     z-index: 20;
+
+    @media (max-width: 680px) {
+      width: 90%;
+    }
+
+    @media (max-width: 494px) {
+      padding: 15px;
+    }
   }
 
   // .modal__form
@@ -1037,22 +1045,27 @@ img {
   // .modal__body
   &__body {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 18px;
 
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      /* IE10+ CSS */
-      display: block;
+    @media (max-width: 618px) {
+      flex-direction: column;
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        /* IE10+ */
+        display: block;
+      }
     }
   }
 
   // .modal__sum
   &__sum {
-    flex: 1 1 54%;
+    flex: 0 1 30%;
     margin-right: 19px;
 
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      /* IE10+ CSS */
-      max-width: 50%;
+      /* IE10+ */
+      max-width: 227px;
     }
 
     // .modal__sum_input
@@ -1071,12 +1084,13 @@ img {
 
   // .modal__info
   &__info {
+    flex: 1 1 60%;
     margin-bottom: 0;
   }
 
   // .modal__payment
   &__payment {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   // .modal__button
@@ -1100,6 +1114,7 @@ img {
   // .payment-modal__list
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   // .payment-modal__item
@@ -1110,6 +1125,7 @@ img {
     letter-spacing: -0.24px;
     color: $font-color-black;
     user-select: none;
+    margin-bottom: 20px;
 
     // .payment-modal__item:last-child
     &:last-child {
