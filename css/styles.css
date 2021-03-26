@@ -93,6 +93,7 @@ img {
   position: relative;
   padding: 12px 17px 12px 50px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .aside-menu__item:hover {
